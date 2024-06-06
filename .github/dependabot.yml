@@ -4,3 +4,12 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      dependency-updates:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
